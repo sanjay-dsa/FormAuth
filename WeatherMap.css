@@ -1,0 +1,43 @@
+.weather-map-container {
+  width: 100%;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  animation: fadeIn 0.6s ease;
+}
+
+.map-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+    height: 300px;
+  }
+
+  .weather-map-container {
+    padding: 15px;
+  }
+}
